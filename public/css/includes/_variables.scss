@@ -1,0 +1,15 @@
+$text-color: #333333;
+$primary: #608fd2;
+$grey: #f0f0f0;
+
+$gutter: 40px;
+
+$mobile-ls: 600px;
+$tablet: 769px;
+$pc-sm: 1024px;
+$pc-md: 1200px;
+
+@mixin radius(){
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}

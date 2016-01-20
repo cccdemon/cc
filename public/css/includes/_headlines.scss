@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial';
+  font-weight: normal;
+  color: $primary;
+}
+
+h1, h2 {
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+h2 {  
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+h3 {
+  position: relative;
+  padding-left: 40px;
+  font-size: 26px;
+  margin-bottom: 20px;
+  
+  &:before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 36px;
+  }
+  
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h5 {
+  color: $text-color;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h6 {
+  
+}
+
+@media screen and (min-width: $tablet) {
+  
+  h1, h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+
+  h2 {  
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 40px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    
+    
+    &:before {
+      font-size: 56px;
+    }
+    
+  }
+  
+  
+}
