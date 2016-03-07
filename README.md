@@ -1,4 +1,1 @@
 # cc
-
-geiler shit
-

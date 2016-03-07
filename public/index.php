@@ -92,7 +92,7 @@ Wir reinigen sämtliche Glasfronten und Variationen, vom Privathaushalt über Sc
               </div>
             </article>
             <article>
-              <img src="img/leistungen/bauabschlussreinigung.jpg" alt="">
+              <img src="img/leistungen/grundreinigung.jpg" alt="">
               <div class="inner">
                 <h4>Grundreinigung</h4>
                 <p>
