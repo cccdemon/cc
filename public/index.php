@@ -282,7 +282,7 @@ Wir reinigen sämtliche Glasfronten und Variationen, vom Privathaushalt über Sc
       <section class="jobs">
         <div class="container">
           <h3 class="icon-about">Jobs</h3>
-          <img class="cars" src="img/cars.png" alt="">
+          
           <p>
             Wir sind immer auf der Suche nach Qualifizierten, Engagierten und zuverlässigen Mitarbeitern.
           </p>
