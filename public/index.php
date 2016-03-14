@@ -1,3 +1,33 @@
+<?php
+
+$fail = false;
+$mail = "";
+$mailbody = "";
+if(isset($_REQUEST['submit'])) {
+
+  foreach ($_REQUEST as $key => $value){
+    if ($key == "email") {
+      if (filter_var($value, FILTER_VALIDATE_EMAIL)) {
+          $mail = $value;
+      } else {
+        $fail = true;
+      }
+    }
+    $mailbody .= "$key = $value\n";
+  }
+
+
+  if (!$fail) {
+    $from = $mail;
+    $to = "buero@cologneclean.de,te@rb.de";
+    $subject = "Anfrage über die Webseite";
+    $message = $mailbody;
+    $headers = "From:" . $from;
+    mail($to,$subject,$message, $headers);
+  }
+}
+?>
+
 
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -128,7 +158,7 @@ Wir reinigen sämtliche Glasfronten und Variationen, vom Privathaushalt über Sc
           <p>
             Schicken Sie uns eine unverbindliche Anfrage und erhalten Sie ein Angebot von uns oder rufen Sie uns an unter 02203 20 16 74.
           </p>
-          <form id="kontakt-form" action="index.php">
+          <form id="kontakt-form" action="index.php" method="POST">
             <div class="column">
               <div class="col-50-md">
                 <h5>Anfrage zu:</h5>
@@ -237,6 +267,7 @@ Wir reinigen sämtliche Glasfronten und Variationen, vom Privathaushalt über Sc
             <div class="column">
               <div class="col-100">
                 <input type="submit" value="Anfrage absenden">
+                <input type='hidden' name='submit' />
                 <p>
                   * Pflichtfelder, die ausgefüllt werden müssen.
                 </p>
@@ -305,9 +336,6 @@ Wir reinigen sämtliche Glasfronten und Variationen, vom Privathaushalt über Sc
       </section>
     </main>
     <footer>
-    <?php
-      print_r($_REQUEST);
-    ?>  
     </footer>
 		<script src="js/libs/jquery-1.11.2.min.js"></script>
 		<script src="js/script.js"></script>
