@@ -193,7 +193,7 @@ Wir reinigen sämtliche Glasfronten und Variationen, vom Privathaushalt über Sc
                   <label for="sonstiges">Sonstiges</label>
                   <input name="sonstiges" id="sonstiges" type="text" />
 
-                  <label for="flaeche">geschätzte Fläch * (qm)</label>
+                  <label for="flaeche">geschätzte Fläche * (qm)</label>
                   <input name="flaeche" id="flaeche" type="text" />
                 </div>
               </div>
